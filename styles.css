@@ -1735,3 +1735,22 @@
        transform: scale(0.7) !important;
    }
  }
+ @media only screen and (max-width: 700px){
+    h2.expertise-title {
+        margin-top: -70px;
+        transform: scale(0.8) !important;
+    }
+    
+    .expertise-content .buttons {
+        left: 0 ;
+        top: calc(125px + -6%);
+        transform: scale(0.4) !important;
+        right: 0;
+        flex-direction: unset;
+    }
+    .expertise-content .buttons button {
+        font-size: 26px;
+    }
+    
+    
+    }
