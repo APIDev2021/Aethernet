@@ -64,6 +64,13 @@
     background: #12b7de;
     padding: 1px;
 }
+section.slides {
+    clip-path: polygon(103% 0, 101% 73%, 91% 103%, 8% 100%, 0% 75%, 0% 0);
+    /* overflow: hidden; */
+    background: #0a4f8e !important;
+    /* margin: 36px; */
+    padding: 3px;
+}
  
 nav.main-menu.full-width {
     display: flex;
@@ -321,9 +328,12 @@ h2.expertise-title span {
 }
 
 .slider {
-   position: absolute;
-   bottom: 20px;
-  
+    clip-path: polygon(103% 0, 101% 73%, 91% 103%, 8% 100%, 0% 75%, 0% 0);
+    padding: 100px 20px;
+    background: #000;
+}
+main { 
+    background: none;
 }
 
 @keyframes scroll {
@@ -339,6 +349,19 @@ h2.expertise-title span {
     background-color: #081a4f; 
     padding: 10px 20px; 
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+.triangles {
+   background:none;
+}
+h1#hero-title:before {
+    content: "";
+    width: 340px;
+    height: 340px;
+    background: url();
+    background: url(hero_logo.png) no-repeat center ;
+    display: block;
+    background-size: 100%;
+    margin: 20px auto;
 }
 
 
@@ -409,14 +432,44 @@ h2.expertise-title span {
       </nav>
    </header>
    <section class="hero page crt">
-      <div class="triangles"></div>
+     <div class="triangles"></div>  
       <h1 id="hero-title" class="hero-title">Aethernet</h1>
       <span id="hero-subtitle" class="subtitle">
          Run machine learning Through Cloud Computing<br>
          Capability, Funded Though DeFi</span>
 
 
+        
+   </section>
+  
+
+   <div class="hero-spacer"></div>
+   <main>
+      <section id="about" class="about page">
+         <div class="content">
+            <div class="woman box"></div>
+            <div class="fantom box"></div>
+            <div class="aug-container box" data-augmented-ui="tr-clip br-2-clip-y bl-clip border"
+               style="--aug-border-all: 5px; --aug-border-opacity: 0.7;">
+               <div class="aug-content">
+                  <h2 data-text="About Aethernet">About Aethernet</h2>
+                  <p>Run machine learning Through Cloud Computing Capability, Funded Though DeFi</p><br><br>
+                  <a href=""><button class="button-49" role="button">Telegram</button></a><br><br>
+                  <a href=""><button class="button-49" role="button">Twitter</button></a><br><br>
+                  <a href=""><button class="button-49" role="button">Dextool</button></a><br><br>
+                  <p>Contract: 0x0000000000000000000</p>
+               </div>
+            </div>
+         </div>
+         
+      </section>
+
+        
+
+      <section class="slides">
+       
          <div class="slider">
+            <h2 style="color: #fff; font-size: 30px; margin:10px 20px 40px;"><span>CLOUD GPU PROVIDERS</span></h2>
             <div class="slide-track">
               <div class="slide">
                 <img src="logoss/1.png" alt="">
@@ -467,27 +520,6 @@ h2.expertise-title span {
                
             </div>
           </div>
-   </section>
-  
-
-   <div class="hero-spacer"></div>
-   <main>
-      <section id="about" class="about page">
-         <div class="content">
-            <div class="woman box"></div>
-            <div class="fantom box"></div>
-            <div class="aug-container box" data-augmented-ui="tr-clip br-2-clip-y bl-clip border"
-               style="--aug-border-all: 5px; --aug-border-opacity: 0.7;">
-               <div class="aug-content">
-                  <h2 data-text="About Aethernet">About Aethernet</h2>
-                  <p>Run machine learning Through Cloud Computing Capability, Funded Though DeFi</p><br><br>
-                  <a href=""><button class="button-49" role="button">Telegram</button></a><br><br>
-                  <a href=""><button class="button-49" role="button">Twitter</button></a><br><br>
-                  <a href=""><button class="button-49" role="button">Dextool</button></a><br><br>
-                  <p>Contract: 0x0000000000000000000</p>
-               </div>
-            </div>
-         </div>
       </section>
       <section id="expertise" class="expertise page">
          <h2  class="expertise-title" data-text="Tokenomics"><span>Tokenomics</span></h2>
