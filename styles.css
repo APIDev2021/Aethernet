@@ -547,11 +547,11 @@
      position: relative;
 }
  .woman {
-     width: 512px;
-     background: url(hero_logo.png) no-repeat center center /cover;
-     height: 61%;
+     width: 612px;
+     background: url(about_ai.png) no-repeat center center /cover;
+     height: 81%;
      position: absolute;
-     bottom: 20;
+     bottom: 0;
      left: 15%;
 }
  .fantom {
