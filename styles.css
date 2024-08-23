@@ -448,8 +448,8 @@
      color: #fff;
 }
  .hero .subtitle {
-     font-family: "Quickzag", sans-serif;
-     font-size: 42px;
+     font-family: "automata", sans-serif;
+     font-size: 25px;
      color: white;
      text-shadow: 2px 2px rgb(0, 13, 130);
      margin-top: -20px;
@@ -464,7 +464,7 @@
      background-attachment: fixed;
 }
  h1.hero-title {
-     font-family: 'VCR', sans-serif;
+     font-family: 'space', sans-serif;
      background: -webkit-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #2600ff);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -473,15 +473,15 @@
      text-transform: uppercase;
      letter-spacing: 0.05em;
      text-shadow: 3px 3px 0px rgba(0,255,255,0.7), 6px 6px 0px rgba(25, 0, 255, 0.7);
-     animation: glow 5s ease-in-out infinite alternate;
+     animation: glow 2s ease-in-out infinite alternate;
      z-index: 1;
 }
  @keyframes glow {
      0% {
-         text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #2600ff, 0 0 70px #2600ff, 0 0 80px #2600ff, 0 0 100px #2600ff, 0 0 150px #ff00de;
+         text-shadow: 0 0 10px #00ffff, 0 0 20px #2600ff;
     }
-     100% {
-         text-shadow: 0 0 5px #00ffff, 0 0 10px #2600ff, 0 0 15px #2600ff, 0 0 20px #2600ff, 0 0 35px #2600ff, 0 0 40px #2600ff, 0 0 50px #2600ff, 0 0 75px #2600ff;
+     50% {
+         text-shadow: 0 0 5px #00ffff, 0 0 10px #2600ff, 0 0 15px #2600ff, 0 0 20px #2600ff;
     }
 }
 /* MAIN MENU */
@@ -569,28 +569,29 @@
  .aug-container p {
      margin: 25px 0;
      color: white;
+     font-family: 'automata', sans-serif;
      text-shadow: 2px 2px grey;
-     font-size: 32px;
-     line-height: 0.7;
+     font-size: 22px;
+     line-height: 1.2;
 }
  .aug-container h2 {
-     font-family: 'VCR', monospace;
+     font-family: 'space', monospace;
      font-size: 38px;
      color: white;
-     text-shadow: 3px 3px 0px rgba(133, 105, 255, 0.7), 6px 6px 0px rgba(255,140,0,0.7), 9px 9px 0px rgba(255,227,2,0.7), 12px 12px 0px rgba(0,227,2,0.7), 15px 15px 0px rgba(2,140,255,0.7), 18px 18px 20px rgba(255,255,255,0.9);
      letter-spacing: 0.05em;
      text-transform: uppercase;
      animation: glow2 2s ease-in-out infinite alternate;
      z-index: 1;
 }
- @keyframes glow2 {
-     from {
-         text-shadow: 3px 3px 0px rgba(120, 105, 255, 0.7), 6px 6px 0px rgba(255,140,0,0.7), 9px 9px 0px rgba(255,227,2,0.7), 12px 12px 0px rgba(0,227,2,0.7), 15px 15px 0px rgba(2,140,255,0.7), 18px 18px 20px rgba(255,255,255,0.9);
-    }
-     to {
-         text-shadow: 3px 3px 0px rgba(2,140,255,0.7), 6px 6px 0px rgba(0,227,2,0.7), 9px 9px 0px rgba(255,227,2,0.7), 12px 12px 0px rgba(255,140,0,0.7), 15px 15px 0px rgba(120, 105, 255, 0.7), 18px 18px 20px rgba(255,255,255,0.9);
-    }
+@keyframes glow2 {
+    0% {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #2600ff;
+   }
+    50% {
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #2600ff, 0 0 15px #2600ff, 0 0 20px #2600ff;
+   }
 }
+
 /* EXPERTISE SECTION */
  .expertise {
      background: url(bg3.gif) no-repeat center center /cover;
@@ -610,8 +611,8 @@
  .expertise h2 {
      letter-spacing: 1px;
      text-transform: uppercase;
-     font-family: "VCR", monospace;
-     font-size: 70px;
+     font-family: "space", monospace;
+     font-size: 50px;
      color: rgb(255, 255, 255);
      text-shadow: 3px 3px 0px #4133ff, 6px 6px 0px #9633FF;
      display: inline-block;
@@ -625,6 +626,16 @@
      transition: left 2s;
      overflow: initial;
      border: 4px dashed cyan;
+     animation: glow2 2s ease-in-out infinite alternate;
+     z-index: 1;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #2600ff;
+   }
+    50% {
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #2600ff, 0 0 15px #2600ff, 0 0 20px #2600ff;
+   }
 }
  .expertise h2::before {
      content: '';
@@ -688,6 +699,8 @@
 }
  .face p {
      padding: 1rem;
+     font-family: 'automata', sans-serif;
+     font-size: 20px;
 }
  .face .img {
      width: 216px;
@@ -709,7 +722,7 @@
 }
  .face h3 {
      font-size: 30px;
-     font-family: "VCR", monospace;
+     font-family: "space", monospace;
      text-transform: uppercase;
 }
  .face {
@@ -752,7 +765,7 @@
 }
 /* CUBE NAV */
  .buttons button {
-     font-family: "VCR", monospace;
+     font-family: "automata", monospace;
      font-size: 24px;
      padding: 10px 20px;
      color: #fff;
@@ -1447,7 +1460,7 @@
      height: 15px;
      line-height: 15px;
      color: white;
-     font-family: 'VCR', monospace;
+     font-family: 'automata', monospace;
      background: deeppink;
      padding: 0 30px 0 10px;
      -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 30px, calc(100% - 30px) 0%, 0% 0%);
@@ -1499,7 +1512,7 @@
      justify-content: center;
      align-items: center;
      text-align: center;
-     font-family: "C64", monospace;
+     font-family: "autotama", monospace;
      font-size: 90px;
      color: antiquewhite;
      text-shadow: 5px 5px black;
@@ -1762,4 +1775,12 @@
             transform: scale(0.7) !important;
         }
     
+    }
+    @font-face {
+        font-family: 'space';
+        src: url(font/space.ttf);
+    }
+    @font-face {
+        font-family: 'automata';
+        src: url(font/BlenderPro-Medium.otf);
     }
