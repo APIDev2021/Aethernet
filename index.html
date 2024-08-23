@@ -74,9 +74,10 @@ section.slides {
  
 nav.main-menu.full-width {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     transform: none;
     align-items: center;
+    padding: 25px;
 }
 .main-menu li { 
     transform: none;
@@ -363,6 +364,134 @@ h1#hero-title:before {
     background-size: 100%;
     margin: 20px auto;
 }
+.land {
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    background: url(back.png) no-repeat center;
+    padding: 20px 9px;
+    background-size: cover;
+    clip-path: polygon(97% 0, 100% 10%, 100% 100%, 2% 100%, 0% 91%, 0 0);
+    height: 80vh;
+}
+body { 
+   
+    background: url(bg2.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+.coverland {
+    display: block;
+    width: 96%;
+    clip-path: polygon(97% 0, 100% 10%, 100% 100%, 2% 100%, 0% 91%, 0 0);
+    background: #36d6e3;
+    padding: 2px;
+    height: 80vh; 
+}
+
+.glowing {
+  position: relative;
+  transform-origin: right;
+  animation: colorChange 10s linear infinite;
+}
+
+.glowing:nth-child(even) {
+  transform-origin: left;
+}
+
+@keyframes colorChange {
+  0% {
+    
+    transform: rotate(0deg);
+  }
+  100% {
+   
+    transform: rotate(360deg);
+  }
+}
+
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+
+.glowing span::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -8px;
+  width: 10px;
+  height: 15px;
+  background: rgb(9, 157, 231);
+  border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1)::before {
+  background: rgb(57, 192, 255);
+  box-shadow: 0 0 20px rgb(10, 161, 226),
+    0 0 40px rgb(18, 152, 193),
+    0 0 60px rgb(80, 88, 235),
+    0 0 80px rgb(95, 37, 189),
+    0 0 0 8px rgba(134,255,0,.1);
+}
+
+.glowing span:nth-child(3n + 2)::before {
+  background: rgb(73, 255, 225);
+  box-shadow: 0 0 20px rgb(13, 139, 164),
+    0 0 40px rgb(35, 119, 198),
+    0 0 60px rgb(32, 206, 232),
+    0 0 80px rgb(25, 225, 243),
+    0 0 0 8px rgba(255,214,0,.1);
+}
+
+.glowing span:nth-child(3n + 3)::before {
+  background: rgba(0,226,255,1);
+  box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 3s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+  animation: animate 8s alternate infinite; 
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 
 @media only screen and (max-width: 700px){
@@ -432,18 +561,72 @@ h1#hero-title:before {
       </nav>
    </header>
    <section class="hero page crt">
-     <div class="triangles"></div>  
-      <h1 id="hero-title" class="hero-title">Aethernet</h1>
-      <span id="hero-subtitle" class="subtitle">
-         Run machine learning Through Cloud Computing<br>
-         Capability, Funded Though DeFi</span>
+
+      <div class="coverland">
+      <div class="land">
+         <div class="triangles"></div>  
+            <h1 id="hero-title" class="hero-title">Aethernet</h1>
+            <span id="hero-subtitle" class="subtitle">
+               Run machine learning Through Cloud Computing<br>
+               Capability, Funded Though DeFi</span>
+
+
+      </div>
+   </div>
+
+   <!-- wp:cover {"dimRatio":0,"overlayColor":"custom-dark-blue-2","className":"ticss-c17df816","layout":{"type":"constrained"},"hasCustomCSS":true,"customCSS":".glowing {\n  position: relative;\n  transform-origin: right;\n  animation: colorChange 5s linear infinite;\n}\n\n.glowing:nth-child(even) {\n  transform-origin: left;\n}\n\n@keyframes colorChange {\n  0% {\n    filter: hue-rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    filter: hue-rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.glowing span {\n  position: absolute;\n  top: calc(80px * var(\u002d\u002di));\n  left: calc(80px * var(\u002d\u002di));\n  bottom: calc(80px * var(\u002d\u002di));\n  right: calc(80px * var(\u002d\u002di));\n}\n\n.glowing span::before {\n  content: \u0022\u0022;\n  position: absolute;\n  top: 50%;\n  left: -8px;\n  width: 15px;\n  height: 15px;\n  background: #f00;\n  border-radius: 50%;\n}\n\n.glowing span:nth-child(3n + 1)::before {\n  background: rgba(134,255,0,1);\n  box-shadow: 0 0 20px rgba(134,255,0,1),\n    0 0 40px rgba(134,255,0,1),\n    0 0 60px rgba(134,255,0,1),\n    0 0 80px rgba(134,255,0,1),\n    0 0 0 8px rgba(134,255,0,.1);\n}\n\n.glowing span:nth-child(3n + 2)::before {\n  background: rgba(255,214,0,1);\n  box-shadow: 0 0 20px rgba(255,214,0,1),\n    0 0 40px rgba(255,214,0,1),\n    0 0 60px rgba(255,214,0,1),\n    0 0 80px rgba(255,214,0,1),\n    0 0 0 8px rgba(255,214,0,.1);\n}\n\n.glowing span:nth-child(3n + 3)::before {\n  background: rgba(0,226,255,1);\n  box-shadow: 0 0 20px rgba(0,226,255,1),\n    0 0 40px rgba(0,226,255,1),\n    0 0 60px rgba(0,226,255,1),\n    0 0 80px rgba(0,226,255,1),\n    0 0 0 8px rgba(0,226,255,.1);\n}\n\n.glowing span:nth-child(3n + 1) {\n  animation: animate 10s alternate infinite;\n}\n\n.glowing span:nth-child(3n + 2) {\n  animation: animate-reverse 3s alternate infinite;\n}\n\n.glowing span:nth-child(3n + 3) {\n  animation: animate 8s alternate infinite; \n}\n\n@keyframes animate {\n  0% {\n    transform: rotate(180deg);\n  }\n  50% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes animate-reverse {\n  0% {\n    transform: rotate(360deg);\n  }\n  \n  50% {\n    transform: rotate(180deg);\n  }\n  \n  100% {\n    transform: rotate(0deg);\n  }\n}"} -->
+ 
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+<!-- /wp:html --></div></div>
+<!-- /wp:cover -->
 
 
         
    </section>
   
 
-   <div class="hero-spacer"></div>
+   <!--<div class="hero-spacer"></div>-->
    <main>
       <section id="about" class="about page">
          <div class="content">
@@ -472,51 +655,51 @@ h1#hero-title:before {
             <h2 style="color: #fff; font-size: 30px; margin:10px 20px 40px;"><span>CLOUD GPU PROVIDERS</span></h2>
             <div class="slide-track">
               <div class="slide">
-                <img src="logoss/1.png" alt="">
+                <img src="/logoss/1.png" alt="">
               </div>
               <div class="slide">
-               <img src="logoss/2.png" alt=""> </div>
+               <img src="/logoss/2.png" alt=""> </div>
               <div class="slide">
-               <img src="logoss/3.png" alt=""> </div>
+               <img src="/logoss/3.png" alt=""> </div>
               <div class="slide">
-               <img src="logoss/4.png" alt=""></div>
+               <img src="/logoss/4.png" alt=""></div>
                <div class="slide">
-                  <img src="logoss/1.png" alt="">
+                  <img src="/logoss/1.png" alt="">
                 </div>
                 <div class="slide">
-                 <img src="logoss/2.png" alt=""> </div>
+                 <img src="/logoss/2.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/3.png" alt=""> </div>
+                 <img src="/logoss/3.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/4.png" alt=""></div>
+                 <img src="/logoss/4.png" alt=""></div>
                  <div class="slide">
-                  <img src="logoss/1.png" alt="">
+                  <img src="/logoss/1.png" alt="">
                 </div>
                 <div class="slide">
-                 <img src="logoss/2.png" alt=""> </div>
+                 <img src="/logoss/2.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/3.png" alt=""> </div>
+                 <img src="/logoss/3.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/4.png" alt=""></div>
+                 <img src="/logoss/4.png" alt=""></div>
                  <div class="slide">
-                  <img src="logoss/1.png" alt="">
+                  <img src="/logoss/1.png" alt="">
                 </div>
                 <div class="slide">
-                 <img src="logoss/2.png" alt=""> </div>
+                 <img src="/logoss/2.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/3.png" alt=""> </div>
+                 <img src="/logoss/3.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/4.png" alt=""></div>
+                 <img src="/logoss/4.png" alt=""></div>
 
                  <div class="slide">
-                  <img src="logoss/1.png" alt="">
+                  <img src="/logoss/1.png" alt="">
                 </div>
                 <div class="slide">
-                 <img src="logoss/2.png" alt=""> </div>
+                 <img src="/logoss/2.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/3.png" alt=""> </div>
+                 <img src="/logoss/3.png" alt=""> </div>
                 <div class="slide">
-                 <img src="logoss/4.png" alt=""></div>
+                 <img src="/logoss/4.png" alt=""></div>
                
             </div>
           </div>
