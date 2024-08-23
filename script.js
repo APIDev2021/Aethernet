@@ -9,7 +9,7 @@ const images = {
         img: new Image()
     },
     woman: {
-        src: 'img/woman.png',
+        src: 'logo_hero.png',
         img: new Image()
     },
     computer2: {
@@ -17,15 +17,15 @@ const images = {
         img: new Image()
     },
     dapps: {
-        src: 'img/dapps.png',
+        src: 'logo_hero',
         img: new Image()
     },
     uiux: {
-        src: 'img/uiux.png',
+        src: 'logo_hero.png',
         img: new Image()
     },
     audit: {
-        src: 'img/audit.png',
+        src: 'logo_hero.png',
         img: new Image()
     },
     ufo: {
