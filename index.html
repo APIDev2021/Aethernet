@@ -276,6 +276,43 @@
 .main-menu li:hover{
    transform: skew(0deg) translateY(-2px);
 }
+h2.expertise-title {
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+    background: #ddd;
+    padding: 2px !important;
+    border: none;
+}
+
+h2.expertise-title span {
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+    display: block;
+    width: 100%;
+    background: #03315a !important;
+    padding: 10px 15px;
+}
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+   position: absolute;
+   bottom: 20px;
+  
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+.slider img {
+  width: 200px;
+  height: auto;
+  animation: scroll 60s linear infinite;
+}
 
 
 @media only screen and (max-width: 700px){
@@ -289,10 +326,11 @@
     justify-content: center;
     text-align: center;
 }
+  }
 
 
 
-    }
+
 
 
    </style>
@@ -324,8 +362,8 @@
       
       <nav class="main-menu full-width">
          <div class="logos">
-            <img src="hero_banner.png" style="
-            width: 230px;
+            <img src="hero_logo.png" style="
+            width: 80px;
             padding: 10px;
         ">
          </div>
@@ -349,7 +387,62 @@
       <span id="hero-subtitle" class="subtitle">
          Run machine learning Through Cloud Computing<br>
          Capability, Funded Though DeFi</span>
+
+
+         <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="/logoss/1.png" alt="">
+              </div>
+              <div class="slide">
+               <img src="/logoss/2.png" alt=""> </div>
+              <div class="slide">
+               <img src="/logoss/3.png" alt=""> </div>
+              <div class="slide">
+               <img src="/logoss/4.png" alt=""></div>
+               <div class="slide">
+                  <img src="/logoss/1.png" alt="">
+                </div>
+                <div class="slide">
+                 <img src="/logoss/2.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/3.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/4.png" alt=""></div>
+                 <div class="slide">
+                  <img src="/logoss/1.png" alt="">
+                </div>
+                <div class="slide">
+                 <img src="/logoss/2.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/3.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/4.png" alt=""></div>
+                 <div class="slide">
+                  <img src="/logoss/1.png" alt="">
+                </div>
+                <div class="slide">
+                 <img src="/logoss/2.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/3.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/4.png" alt=""></div>
+
+                 <div class="slide">
+                  <img src="/logoss/1.png" alt="">
+                </div>
+                <div class="slide">
+                 <img src="/logoss/2.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/3.png" alt=""> </div>
+                <div class="slide">
+                 <img src="/logoss/4.png" alt=""></div>
+               
+            </div>
+          </div>
    </section>
+  
+
    <div class="hero-spacer"></div>
    <main>
       <section id="about" class="about page">
@@ -370,7 +463,7 @@
          </div>
       </section>
       <section id="expertise" class="expertise page">
-         <h2 class="expertise-title" data-text="Tokenomics">Tokenomics</h2>
+         <h2  class="expertise-title" data-text="Tokenomics"><span>Tokenomics</span></h2>
          <div class="expertise-content flex v-center h-center">
             <div class="buttons">
                <div class="hoverskew"><button data-face="top" data-augmented-ui="tr-clip bl-clip-x both">Token Details</button></div>
