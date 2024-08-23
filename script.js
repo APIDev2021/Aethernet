@@ -1,31 +1,31 @@
 /* PRELOAD IMAGES & ASSETS */
 const images = {
     background: {
-        src: 'bg.gif',
+        src: 'img/background.jpg',
         img: new Image()
     },
     background1: {
-        src: 'bg.gif2',
+        src: 'img/background1.png',
         img: new Image()
     },
     woman: {
-        src: 'hero_logo.png',
+        src: 'img/woman.png',
         img: new Image()
     },
     computer2: {
-        src: 'bg3.gif',
+        src: 'img/computer2.jpg',
         img: new Image()
     },
     dapps: {
-        src: 'hero_logo.png',
+        src: 'img/dapps.png',
         img: new Image()
     },
     uiux: {
-        src: 'hero_logo.png',
+        src: 'img/uiux.png',
         img: new Image()
     },
     audit: {
-        src: 'hero_logo.png',
+        src: 'img/audit.png',
         img: new Image()
     },
     ufo: {
