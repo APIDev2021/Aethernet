@@ -1755,5 +1755,11 @@
         .scene.in-view {
             transform: scale(0.6) !important;
         }
+        .main-menu ul {
+            transform: scale(0.8) !important;
+        }
+        h1#hero-title {
+            transform: scale(0.7) !important;
+        }
     
     }
