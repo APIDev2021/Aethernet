@@ -546,6 +546,7 @@
      align-items: center;
      position: relative;
 }
+/*
  .woman {
      width: 612px;
      background: url(about_ai.png) no-repeat center center /cover;
@@ -553,7 +554,7 @@
      position: absolute;
      bottom: 0;
      left: 15%;
-}
+}*/
  .fantom {
      width: 512px;
      height: 512px;
